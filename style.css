@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #f2f2f2;
+    color: rgb(24, 22, 22);
+}
+
+header {
+    background-color: #F6D4F5;
+}
+
+header .topbar {
+    background-color: rgb(12, 11, 12);
+    color: #F6D4F5;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 6px;
+}
+
+.container {
+    width: 75%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header .container {
+    max-width: 100%;
+    padding: 15px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    clear: both;
+}
+
+header #cart {
+    color: rgb(24, 22, 22);
+    font-size: 1.2em;
+}
+
+header #cart i {
+    color: rgba(221, 143, 231, 0.5);
+    font-size: 50px;
+    margin: 10px;
+}
+
+p.left span {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+    color: rgb(24, 22, 22);
+}
+
+p.left {
+    color: rgb(221, 143, 231);
+    margin-top: 5px;
+}
+
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .container nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: rgb(24, 22, 22);
+    padding: 10px 15px;
+}
+
+header .container nav a:hover {
+    background-color: rgb(53, 50, 50);
+    color: white;
+    transition: all .2s ease 0s;
+}
+
+#slider {
+    margin-top: 40px;
+}
+
+#slider h2 {
+    position: absolute;
+    background-color: #F6D4F5;
+    opacity: .8;
+    cursor: pointer;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+
+#slider h2 span {
+    font-weight: normal;
+    font-size: 0.8em;
+    letter-spacing: 1.5px;
+}
+
+#slider img {
+    border: 20px solid white;
+    width: 100%;
+}
+
+main #select {
+    max-width: 100%;
+    background-color: white;
+    padding: 10px;
+    border: 20px solid white;
+    margin-top: 40px;
+}
+
+#slider,
+#select,
+#info,
+#news article,
+#crush {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+main #select article {
+    display: inline-block;
+    margin: 18px;
+}
+
+main #select article h3 {
+    text-align: center;
+    font-family: "Courgette";
+    font-size: 1.6em;
+}
+
+#select:hover article {
+    opacity: .5;
+}
+
+#select article:hover {
+    opacity: 1;
+}
+
+#news {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main #news article {
+    background-color: #fff;
+    padding: 20px;
+}
+
+#new h2,
+#best h2,
+#crush h2 {
+    background-image: url(../img/logo4.png);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding: 10px 40px;
+    color: white;
+    font-weight: normal;
+    font-size: 1.4em;
+    text-align: left;
+}
+
+#new h2 {
+    background-color: rgb(233, 53, 194);
+}
+
+#best h2 {
+    background-color: #91BC46;
+}
+
+#crush h2 {
+    background-color: rgb(2, 152, 176);
+}
+
+#news h3 {
+    font-family: "Courgette";
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#news small {
+    display: block;
+    font-family: "Courgette";
+
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+footer #info {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(226,173,224);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.8rem;
+    padding: 25px;
+}
+
+footer #info article i {
+    display: block;
+    text-align: center;
+}
+
+footer #info article:hover {
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease 0s;
+}
+
+#bottombar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F6D4F5;
+    color: rgb(70,65,65);
+}
+
+#bottombar h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#bottombar ul li {
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+#bottombar ul li:hover {
+    color: rgb(240,23,178);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 640px) {
+    header .container {
+        text-align: center;
+    }
+    header .container nav {
+        flex-direction: column;
+    }
+
+    #cart {
+        display: none;
+    }
+
+    #slider h2 {
+        position: relative;
+        display: block;
+        margin: 0;
+        border-color: white;
+        border-style: solid;
+        border-width: 20px 20px 0 20px;
+    }
+
+    main #select {
+        text-align: center;
+    }
+
+    main #select article {
+        display: block;
+    }
+
+    #news  {
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    #news article {
+        margin-top: 15px;
+    }
+
+    footer #info,
+    footer #bottombar {
+        flex-direction: column;
+    }
+
+    #info article{
+        text-align: center;
+        padding: 15px;
+    }
+  
+}
